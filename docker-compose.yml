@@ -1,0 +1,13 @@
+services:
+  hublink-hypervisor:
+    image: neurotechhub/hublink-hypervisor:latest
+    container_name: hublink-hypervisor
+    network_mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/hublink:/opt/hublink:ro
+    environment:
+      - HUBLINK_PATH=/opt/hublink
+    restart: always
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true" 
