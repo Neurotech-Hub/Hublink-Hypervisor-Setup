@@ -48,7 +48,6 @@ echo "Preparing installation directory..." | tee -a "$log_file"
 cd /
 rm -rf /opt/hublink-hypervisor
 mkdir -p /opt/hublink-hypervisor
-cd /opt/hublink-hypervisor || exit 1
 
 # Clone the repository with more verbose output
 echo "Downloading Hublink Hypervisor Setup..." | tee -a "$log_file"
