@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e  # Exit on error
-log_file="install.log"
+log_file="/tmp/hublink-hypervisor-install.log"
 
 # Check if running as root
 if [ "$EUID" -ne 0 ]; then 
