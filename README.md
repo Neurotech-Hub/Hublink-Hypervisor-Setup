@@ -136,8 +136,9 @@ To manually update the container:
 
 ```bash
 cd /opt/hublink-hypervisor
-git pull  # Update configuration files
-docker pull neurotechhub/hublink-hypervisor:latest  # Pull latest image
+git fetch origin
+git reset --hard origin/main
+docker-compose pull
 docker-compose up -d  # Restart with new version
 ```
 
