@@ -136,8 +136,8 @@ To manually update the container:
 
 ```bash
 cd /opt/hublink-hypervisor
-git fetch origin
-git reset --hard origin/main
+sudo git fetch origin
+sudo git reset --hard origin/main
 docker-compose pull
 docker-compose up -d  # Restart with new version
 ```
