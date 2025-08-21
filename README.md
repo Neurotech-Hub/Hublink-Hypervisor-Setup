@@ -140,7 +140,7 @@ sudo git fetch origin
 sudo git reset --hard origin/main
 docker-compose down
 docker-compose pull
-docker-compose up -d  # Restart with new version
+docker-compose up -d
 ```
 
 ## Troubleshooting
